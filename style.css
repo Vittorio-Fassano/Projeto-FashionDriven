@@ -49,7 +49,242 @@ main {
     background-color: white; 
 }
 
+
+
+
+
 .modelo {
+    Width: 385px;
+    Height: 159px;
+    margin-left: 140px;
+    margin-top: 38px;
+}
+.modelo h1 {
+    font-size: 18px ;
+    font-weight: 400;
+    font-family: roboto;
+}
+
+.modelos {
+    Width: 500px;
+    Height: 130px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.modelo1 {
+    margin-right: 40px;
+}
+.modelo1 h2 {
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 25px
+
+}
+
+.modelo2 {
+    margin-right: 40px;
+}
+.modelo2 h2 {
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 13px
+
+}
+
+.modelo3 {
+    margin-right: 40px;
+}
+.modelo3 h2 {
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 1px
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gola {
+    Width: 385px;
+    Height: 159px;
+    margin-left: 140px;
+    margin-top: 38px;
+}
+.gola h1 {
+    font-size: 18px ;
+    font-weight: 400;
+    font-family: roboto;
+}
+.golas {
+    Width: 500px;
+    Height: 130px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.gola1 {
+    margin-right: 40px;
+}
+.gola1 h2 {
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 25px
+}
+
+.gola2 {
+    margin-right: 40px;
+}
+.gola2 h2 {
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: -5px;
+}
+
+.gola3 {
+    margin-right: 40px;
+}
+.gola3 h2 {
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+.tecido {
+    Width: 385px;
+    Height: 159px;
+    margin-left: 140px;
+    margin-top: 38px;
+}
+.tecido h1 {
+    font-size: 18px ;
+    font-weight: 400;
+    font-family: roboto;
+}
+.tecidos {
+    Width: 500px;
+    Height: 130px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.tecido1 {
+    margin-right: 40px;
+}
+.tecido1 h2 {
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 25px
+}
+
+.tecido2 {
+    margin-right: 40px;
+}
+.tecido2 h2 {
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 17px
+}
+
+.tecido3 {
+    margin-right: 40px;
+}
+.tecido3 h2 {
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 17px;
+    
+}
+
+
+
+
+
+
+
+
+.referencia {
+    Width: 397px;
+    Height: 71px;
+    margin-left: 140px;
+    margin-top: 38px;
+}
+
+.referencia h1 {
+    font-size: 18px ;
+    font-weight: 400;
+    font-family: roboto;
+    margin-bottom: 10px;
+}
+
+.link {
+    Width:397px;
+    Height: 40px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    border: none;
+}
+
+.confirmarpedido {
+    Width: 399px;
+    Height: 40px;
+    background: #C4C4C4;
+    font-weight: 400;
+    border-radius: 10px;
+    margin-left: 140px;
+    margin-top: 20px;
+    font-family: roboto;
+    font-size: 20px;
+    line-height: 23px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+.manequim {
     width: 50vw;
     height: 785px;
     background-color: #404EED;
@@ -58,7 +293,7 @@ main {
     align-items: center;
 }
 
-.modelo img {
+.manequim img {
   width: 605px;
   height: 700px;
 }
@@ -77,12 +312,12 @@ footer {
 footer h1 {
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 23px;
     line-height: 28px;
     text-align: center;
     color: black;
     margin: auto;
-    margin-left: 122px;
+    margin-left: 152px;
     margin-top: 30px;
     margin-bottom: 14px;
     display: flex;
@@ -93,15 +328,27 @@ footer h1 {
 .ultimospedidos {
     width: 1085px;
     height: 236.4px;
-    background-color: aqua;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 119px;
-}
+    margin-left: 149px;
+    overflow: hidden;
+}   
 
 .pedido {
     Width: 201px;
     Height: 236.47px;   
-    background-color: orange;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.pedido img {
+    margin-top: 22px;
+}
+
+.pedido h2 {
+    font-family: roboto;
+    font-size: 20px;
+    margin-left: 25px;
 }
