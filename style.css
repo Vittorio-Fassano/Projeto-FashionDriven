@@ -1,11 +1,8 @@
 * {
     box-sizing: border-box;
 }
-
-
 body {
     background-color: white;  
-    
 }
 
 
@@ -17,13 +14,11 @@ header {
     align-items: center;
     flex-direction: row;
 }
-
 header img {
     Width: 55.98px;
     Height: 56.64px;
     margin-left: 80px;
 }
-
 header h1 {
     font-family: New Rocker;
     font-size: 32px;
@@ -38,8 +33,6 @@ main {
     background-color: white; 
     display: flex;
     justify-content: space-between;
-    
-   
 }
 
 
@@ -48,9 +41,6 @@ main {
     height: 785px;
     background-color: white; 
 }
-
-
-
 
 
 .modelo {
@@ -64,16 +54,15 @@ main {
     font-weight: 400;
     font-family: roboto;
 }
-
 .modelos {
     Width: 500px;
     Height: 130px;
     margin-top: 10px;
     display: flex;
 }
-
 .modelo1 {
     margin-right: 40px;
+    position: relative;
 }
 .modelo1 h2 {
     font-family: roboto;
@@ -81,42 +70,51 @@ main {
     font-weight: 400;
     margin-top: 5px;
     margin-left: 25px
-
 }
+.tshirt {
+    position: absolute;
+    margin-top:-95px;
+    margin-left: 10px;
+}
+
+
 
 .modelo2 {
     margin-right: 40px;
+    position: relative;
 }
 .modelo2 h2 {
     font-family: roboto;
     font-size: 18px;
     font-weight: 400;
-    margin-top: 5px;
+    margin-top: 16px;
     margin-left: 13px
-
 }
+.camiseta {
+    position: relative;
+    margin-top: -95px;
+    margin-left: 10px;
+}
+
+
+
 
 .modelo3 {
     margin-right: 40px;
+    position: relative;
 }
 .modelo3 h2 {
     font-family: roboto;
     font-size: 18px;
     font-weight: 400;
     margin-top: 5px;
-    margin-left: 1px
-    
-
+    margin-left: 1p
 }
-
-
-
-
-
-
-
-
-
+.mangalonga {
+    position: absolute;
+    margin-top: -95px;
+    margin-left: 10px;
+}
 
 
 
@@ -139,8 +137,10 @@ main {
     display: flex;
 }
 
+
 .gola1 {
     margin-right: 40px;
+    position: relative;
 }
 .gola1 h2 {
     font-family: roboto;
@@ -149,9 +149,18 @@ main {
     margin-top: 5px;
     margin-left: 25px
 }
+.golav {
+    position: absolute;
+    margin-top: -85px;
+    margin-left: 10px;
+}
+
+
+
 
 .gola2 {
     margin-right: 40px;
+    position: relative;
 }
 .gola2 h2 {
     font-family: roboto;
@@ -160,9 +169,18 @@ main {
     margin-top: 5px;
     margin-left: -5px;
 }
+.golaredonda {
+    position: absolute;
+    margin-top: -85px;
+    margin-left: 10px;
+}
+
+
+
 
 .gola3 {
     margin-right: 40px;
+    position: relative;
 }
 .gola3 h2 {
     font-family: roboto;
@@ -170,14 +188,12 @@ main {
     font-weight: 400;
     margin-top: 5px;
     margin-left: 10px;
-    
 }
-
-
-
-
-
-
+.golapolo {
+    position: absolute;
+    margin-top: -85px;
+    margin-left: 10px;
+}
 
 
 
@@ -201,17 +217,28 @@ main {
 
 .tecido1 {
     margin-right: 40px;
+    position: relative;
+
 }
 .tecido1 h2 {
     font-family: roboto;
     font-size: 18px;
     font-weight: 400;
     margin-top: 5px;
-    margin-left: 25px
+    margin-left: 30px
 }
+.seda {
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 25px;
+}
+
+
+
 
 .tecido2 {
     margin-right: 40px;
+    position: relative;
 }
 .tecido2 h2 {
     font-family: roboto;
@@ -220,9 +247,18 @@ main {
     margin-top: 5px;
     margin-left: 17px
 }
+.algodao {
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 20px;
+}
+
+
+
 
 .tecido3 {
     margin-right: 40px;
+    position: relative;
 }
 .tecido3 h2 {
     font-family: roboto;
@@ -230,14 +266,12 @@ main {
     font-weight: 400;
     margin-top: 5px;
     margin-left: 17px;
-    
 }
-
-
-
-
-
-
+.poliester {
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 20px;
+}
 
 
 .referencia {
@@ -246,13 +280,13 @@ main {
     margin-left: 140px;
     margin-top: 38px;
 }
-
 .referencia h1 {
     font-size: 18px ;
     font-weight: 400;
     font-family: roboto;
     margin-bottom: 10px;
 }
+
 
 .link {
     Width:397px;
@@ -261,6 +295,7 @@ main {
     border-radius: 10px;
     border: none;
 }
+
 
 .confirmarpedido {
     Width: 399px;
@@ -277,13 +312,6 @@ main {
 }
 
 
-
-
-
-
-
-
-
 .manequim {
     width: 50vw;
     height: 785px;
@@ -292,12 +320,10 @@ main {
     justify-content: center;
     align-items: center;
 }
-
 .manequim img {
   width: 605px;
   height: 700px;
 }
-
 
 
 footer {
@@ -308,7 +334,6 @@ footer {
     display: flex;
     flex-direction: column;
 }
-
 footer h1 {
     font-style: normal;
     font-weight: normal;
@@ -325,6 +350,7 @@ footer h1 {
     Height: 28px;
 }
 
+
 .ultimospedidos {
     width: 1085px;
     height: 236.4px;
@@ -333,20 +359,18 @@ footer h1 {
     align-items: center;
     margin-left: 149px;
     overflow: hidden;
+    overflow-x:scroll
 }   
-
 .pedido {
     Width: 201px;
     Height: 236.47px;   
     background: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-right: 20px;
 }
-
 .pedido img {
     margin-top: 22px;
 }
-
 .pedido h2 {
     font-family: roboto;
     font-size: 20px;
