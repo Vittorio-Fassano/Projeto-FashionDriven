@@ -30,25 +30,22 @@
           <h1>Escolha o modelo</h1>
           <div class="modelos">
 
-            <div class="modelo1">
-               <img class="ellipse" src="imagens/Ellipse.png">
-                <div class="tshirt">
+            <div class="item" id="modelo-1" onclick="selecionarModelo(this)">
+                <div class="icone">
                   <img src="imagens/tshirt.png">
                 </div>
              <h2>T-shirt</h2>
             </div>
 
-            <div class="modelo2">
-               <img src="imagens/Ellipse.png">
-               <div class="camiseta">
+            <div class="item" id="modelo-2" onclick="selecionarModelo(this)">
+               <div class="icone">
                  <img src="imagens/Camiseta.png">
                </div>
              <h2>Camiseta</h2>
             </div>
 
-            <div class="modelo3">
-               <img src="imagens/Ellipse.png">
-               <div class="mangalonga">
+            <div class="item" id="modelo-3" onclick="selecionarModelo(this)">
+               <div class="icone">
                  <img src="imagens/Mangalonga.png">
                </div>
              <h2>Manga longa</h2>
@@ -57,29 +54,26 @@
         </div>
       
         
-        <div class="gola">
+        <div class="gola" >
           <h1>Escolha a gola</h1>
           <div class="golas">
 
-            <div class="gola1">
-               <img src="imagens/Ellipse.png">
-               <div class="golav">
+            <div class="item" id="gola-1" onclick="selecionarGola(this)">          
+               <div class="icone">
                  <img src="imagens/GolaV.png">
                </div>
              <h2>Gola V</h2>
             </div>
 
-            <div class="gola2">
-               <img src="imagens/Ellipse.png">
-               <div class="golaredonda">
+            <div class="item" id="gola-2" onclick="selecionarGola(this)">             
+               <div class="icone">
                  <img src="imagens/GolaRedonda.png">
                </div>
              <h2>Gola Redonda</h2>
             </div>
 
-            <div class="gola3">
-               <img src="imagens/Ellipse.png">
-               <div class="golapolo">
+            <div class="item" id="gola-3" onclick="selecionarGola(this)">
+               <div class="icone">
                  <img src="imagens/GolaPolo.png">
                </div>
              <h2>Gola polo</h2>
@@ -92,29 +86,25 @@
           <h1>Escolha o tecido</h1>
           <div class="tecidos">
             
-            <div class="tecido1">
-               <img src="imagens/Ellipse.png">
-               <div class="seda">
+            <div class="item" id="tecido-1" onclick="selecionarTecido(this)">
+               <div class="icone">
                  <img src="imagens/Seda.png">
                </div>
              <h2>Seda</h2>
             </div>
 
-            <div class="tecido2">
-               <img src="imagens/Ellipse.png">
-               <div class="algodao">
+            <div class="item" id="tecido-2" onclick="selecionarTecido(this)">
+               <div class="icone">
                  <img src="imagens/Algodão.png">
                </div>
              <h2>Algodão</h2>
             </div>
 
 
-            <div class="tecido3">
-               <img src="imagens/Ellipse.png">
-               <div class="poliester">
+            <div class="item" id="tecido-3" onclick="selecionarTecido(this)">
+               <div class="icone">
                  <img src="imagens/Poliester.png">
                </div>
-              
              <h2>Poliéster</h2>
             </div>
 
@@ -124,10 +114,10 @@
 
         <div class="referencia">
          <h1>Imagem de referência</h1>
-         <input class="link" placeholder="Insira o link">
+         <input class="link" placeholder="Insira o link" onchange="obterLink(this)">
         </div>
 
-        <button class="confirmarpedido">Confirmar pedido</button>
+        <button onclick = "pedidoConfirmado()" disabled>Confirmar pedido</button>
       </section>
 
 

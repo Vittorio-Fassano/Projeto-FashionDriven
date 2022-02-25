@@ -60,142 +60,28 @@ main {
     margin-top: 10px;
     display: flex;
 }
-.modelo1 {
+
+.item {
     margin-right: 40px;
-    position: relative;
+    
 }
-.modelo1 h2 {
+.item h2 {
     font-family: roboto;
     font-size: 18px;
     font-weight: 400;
     margin-top: 5px;
-    margin-left: 25px
+    text-align: center;
 }
-.tshirt {
-    position: absolute;
-    margin-top:-95px;
-    margin-left: 10px;
-}
-
-
-
-.modelo2 {
-    margin-right: 40px;
-    position: relative;
-}
-.modelo2 h2 {
-    font-family: roboto;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 16px;
-    margin-left: 13px
-}
-.camiseta {
-    position: relative;
-    margin-top: -95px;
-    margin-left: 10px;
-}
-
-
-
-
-.modelo3 {
-    margin-right: 40px;
-    position: relative;
-}
-.modelo3 h2 {
-    font-family: roboto;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 5px;
-    margin-left: 1p
-}
-.mangalonga {
-    position: absolute;
-    margin-top: -95px;
-    margin-left: 10px;
-}
-
-
-
-
-.gola {
-    Width: 385px;
-    Height: 159px;
-    margin-left: 140px;
-    margin-top: 38px;
-}
-.gola h1 {
-    font-size: 18px ;
-    font-weight: 400;
-    font-family: roboto;
-}
-.golas {
-    Width: 500px;
-    Height: 130px;
-    margin-top: 10px;
+.icone {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F2F2F2;
+    border: 0.5px solid #C4C4C4;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
 }
-
-
-.gola1 {
-    margin-right: 40px;
-    position: relative;
-}
-.gola1 h2 {
-    font-family: roboto;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 5px;
-    margin-left: 25px
-}
-.golav {
-    position: absolute;
-    margin-top: -85px;
-    margin-left: 10px;
-}
-
-
-
-
-.gola2 {
-    margin-right: 40px;
-    position: relative;
-}
-.gola2 h2 {
-    font-family: roboto;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 5px;
-    margin-left: -5px;
-}
-.golaredonda {
-    position: absolute;
-    margin-top: -85px;
-    margin-left: 10px;
-}
-
-
-
-
-.gola3 {
-    margin-right: 40px;
-    position: relative;
-}
-.gola3 h2 {
-    font-family: roboto;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 5px;
-    margin-left: 10px;
-}
-.golapolo {
-    position: absolute;
-    margin-top: -85px;
-    margin-left: 10px;
-}
-
-
 
 .tecido {
     Width: 385px;
@@ -215,64 +101,23 @@ main {
     display: flex;
 }
 
-.tecido1 {
-    margin-right: 40px;
-    position: relative;
-
+.gola {
+    Width: 385px;
+    Height: 159px;
+    margin-left: 140px;
+    margin-top: 38px;
 }
-.tecido1 h2 {
-    font-family: roboto;
-    font-size: 18px;
+.gola h1 {
+    font-size: 18px ;
     font-weight: 400;
-    margin-top: 5px;
-    margin-left: 30px
-}
-.seda {
-    position: absolute;
-    margin-top: -80px;
-    margin-left: 25px;
-}
-
-
-
-
-.tecido2 {
-    margin-right: 40px;
-    position: relative;
-}
-.tecido2 h2 {
     font-family: roboto;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 5px;
-    margin-left: 17px
 }
-.algodao {
-    position: absolute;
-    margin-top: -80px;
-    margin-left: 20px;
+.golas {
+    Width: 500px;
+    Height: 130px;
+    margin-top: 10px;
+    display: flex;
 }
-
-
-
-
-.tecido3 {
-    margin-right: 40px;
-    position: relative;
-}
-.tecido3 h2 {
-    font-family: roboto;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 5px;
-    margin-left: 17px;
-}
-.poliester {
-    position: absolute;
-    margin-top: -80px;
-    margin-left: 20px;
-}
-
 
 .referencia {
     Width: 397px;
@@ -297,7 +142,7 @@ main {
 }
 
 
-.confirmarpedido {
+button {
     Width: 399px;
     Height: 40px;
     background: #C4C4C4;
@@ -375,4 +220,9 @@ footer h1 {
     font-family: roboto;
     font-size: 20px;
     margin-left: 25px;
+}
+
+.selecionado {
+    border: 3px solid #404EED;
+    box-sizing: border-box;
 }
