@@ -206,15 +206,20 @@ footer h1 {
     overflow: hidden;
     overflow-x:scroll
 }   
+
 .pedido {
-    Width: 201px;
-    Height: 236.47px;   
+    width: 201px;
+    height: 240px;   
     background: #FFFFFF;
     border-radius: 20px;
     margin-right: 20px;
+    
 }
+
 .pedido img {
     margin-top: 22px;
+    width: 180px;
+    height: 180px;
 }
 .pedido h2 {
     font-family: roboto;

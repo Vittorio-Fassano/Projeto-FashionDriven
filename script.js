@@ -3,11 +3,34 @@ let golaSelecionada = null;
 let tecidoSelecionado = null;
 let linkEscolhido = "";
 
-/* let nome = null; 
+let nome = null; 
 while(nome == null || nome == "")  {
    nome = prompt("Qual o seu nome?");
 }
-*/
+
+inicializaSite();
+
+function inicializaSite() {
+    const promessa = axios.get("https://mock-api.driven.com.br/api/v4/shirts-api/shirts");
+    promessa.then(resposta => {
+        
+        let ultimosPedidos = document.querySelector(".ultimospedidos"); 
+        let todosPedidos = resposta.data;
+        
+        let htmlPedido = "";
+
+        for(let i=0; i<todosPedidos.length; i++) {
+            let pedido = todosPedidos[i];
+            htmlPedido += `
+                <div class="pedido" onclick="">
+                    <img src="${pedido.image}">
+                    <h2><strong>Criador:</strong> ${pedido.owner}</h2>
+                </div> `;
+        }
+
+        ultimosPedidos.innerHTML=htmlPedido;
+    });
+}
 
 function selecionarModelo(produto){
     if(modeloSelecionado != null) {
@@ -69,6 +92,16 @@ function ativaBotao(){
 }
 
 function pedidoConfirmado() {
-    alert ("Pedido confirmado");
-}
+    let objetoResposta = {
+        "model": modeloSelecionado, 
+	    "neck": golaSelecionada,
+	    "material": tecidoSelecionado,
+	    "image": linkEscolhido,
+	    "owner": nome,
+	    "author": nome
+    };
 
+    const promessa = axios.post("https://mock-api.driven.com.br/api/v4/shirts-api/shirts", objetoResposta);
+    promessa.then(resposta => {alert ("Pedido confirmado")});
+    promessa.catch(erro => {alert ("Ops, não conseguimos processar sua encomenda")});
+}
