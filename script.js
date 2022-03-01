@@ -2,6 +2,7 @@ let modeloSelecionado = null;
 let golaSelecionada = null;
 let tecidoSelecionado = null;
 let linkEscolhido = "";
+let todosPedidos = null;
 
 let nome = null; 
 while(nome == null || nome == "")  {
@@ -15,14 +16,14 @@ function inicializaSite() {
     promessa.then(resposta => {
         
         let ultimosPedidos = document.querySelector(".ultimospedidos"); 
-        let todosPedidos = resposta.data;
+        todosPedidos = resposta.data;
         
         let htmlPedido = "";
 
         for(let i=0; i<todosPedidos.length; i++) {
             let pedido = todosPedidos[i];
             htmlPedido += `
-                <div class="pedido" onclick="">
+                <div class="pedido" id="${i}" onclick="escolherUltimoPedido(this)">
                     <img src="${pedido.image}">
                     <h2><strong>Criador:</strong> ${pedido.owner}</h2>
                 </div> `;
@@ -104,4 +105,28 @@ function pedidoConfirmado() {
     const promessa = axios.post("https://mock-api.driven.com.br/api/v4/shirts-api/shirts", objetoResposta);
     promessa.then(resposta => {alert ("Pedido confirmado")});
     promessa.catch(erro => {alert ("Ops, não conseguimos processar sua encomenda")});
+}
+
+function escolherUltimoPedido(pedido) {
+    let idx = pedido.id;
+    idx = parseInt(idx);
+    let pedidoEscolhido = todosPedidos[idx];
+    let objetoResposta = {
+        "model": pedidoEscolhido.model, 
+	    "neck": pedidoEscolhido.neck,
+	    "material": pedidoEscolhido.material,
+	    "image": pedidoEscolhido.image,
+	    "owner": nome,
+	    "author": nome
+    };
+    
+    if(confirm("Deseja escolher este pedido?")) {
+        console.log(pedidoEscolhido)
+        const promessa = axios.post("https://mock-api.driven.com.br/api/v4/shirts-api/shirts", objetoResposta);
+        promessa.then(resposta => {alert ("Pedido confirmado")});
+        promessa.catch(erro => {alert ("Ops, não conseguimos processar sua encomenda")});
+        
+    } else {
+       return false; 
+    }
 }
