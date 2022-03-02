@@ -103,7 +103,10 @@ function pedidoConfirmado() {
     };
 
     const promessa = axios.post("https://mock-api.driven.com.br/api/v4/shirts-api/shirts", objetoResposta);
-    promessa.then(resposta => {alert ("Pedido confirmado")});
+    promessa.then(() => {
+        inicializaSite();    
+        alert ("Pedido confirmado")
+    });
     promessa.catch(erro => {alert ("Ops, não conseguimos processar sua encomenda")});
 }
 
@@ -123,8 +126,11 @@ function escolherUltimoPedido(pedido) {
     if(confirm("Deseja escolher este pedido?")) {
         console.log(pedidoEscolhido)
         const promessa = axios.post("https://mock-api.driven.com.br/api/v4/shirts-api/shirts", objetoResposta);
-        promessa.then(resposta => {alert ("Pedido confirmado")});
-        promessa.catch(erro => {alert ("Ops, não conseguimos processar sua encomenda")});
+        promessa.then(() => {
+            inicializaSite();
+            alert ("Pedido confirmado")
+        });
+        promessa.catch(() => {alert ("Ops, não conseguimos processar sua encomenda")});
         
     } else {
        return false; 
